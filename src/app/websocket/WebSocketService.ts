@@ -8,6 +8,7 @@ import { Subject } from 'rxjs';
 })
 export class WebSocketService{
   private stompClient: Client = new Client();
+
   private messageSubject = new Subject<string>();
 
   constructor() {
